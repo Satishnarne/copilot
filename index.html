@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Cars</title>
+    <style>
+        /* Add your vibrant colors here */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .car {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="tel"],
+        .contact-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dallas Cars</h1>
+        <p>Your Trusted Source for Quality Cars</p>
+        <button>About</button>
+    </header>
+    <div class="container">
+        <div class="car">
+            <img src="car1.jpg" alt="Car 1">
+            <h2>Toyota Camry</h2>
+            <p>Type: Sedan</p>
+            <p>Color: Silver</p>
+            <p>Model: 2022</p>
+        </div>
+        <div class="car">
+            <img src="car2.jpg" alt="Car 2">
+            <h2>Ford Mustang</h2>
+            <p>Type: Coupe</p>
+            <p>Color: Red</p>
+            <p>Model: 2021</p>
+        </div>
+        <!-- Add more cars here -->
+    </div>
+    <footer>
+        © 2024 Dallas Cars. All rights reserved.
+    </footer>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+            <label for="contact_number">Contact Number:</label>
+            <input type="tel" id="contact_number" name="contact_number" placeholder="Enter your contact number" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
